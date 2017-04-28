@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Pet Hotel</title>
+    <script src = "vendors/jquery.min.js" charset="utf-8"></script>
+    <script src = "scripts/client.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+  <h1>Pet Hotel</h1>
+    <form class="guestForm" action="index.html" method="post">
+      <h2>Owner Registration</h2>
+      <input type="text" id="ownerFirst" class="ownerInput" name="firstName" value="" placeholder="First Name">
+      <input type="text" id="ownerLast" class="ownerInput" name="lastName" value="" placeholder="Last Name">
+      <button type="button" id="register" name="">Register</button>
+  <h2>Pets</h2>
+  <span>Owner Name <select class="petInput" name="pets"></select></span>
+      <input type="text" class="petInput" name="petName" value="" placeholder="Pet Name">
+      <input type="text" class="petInput" name="petColor" value=""placeholder="Pet Color">
+      <input type="text" class="petInput" name="petBreed" value=""placeholder="Pet Breed">
+      <button type="button" id="addPet" name="button">Add</button>
+    </form>
+    <table>
+      <tr>
+        <th>Owner</th><th>Pet</th><th>Breed</th><th>Color</th><th>Update</th><th>Delete</th><th>Check In/Out</th>
+      </tr>
+      <tr class="guestInfo">
+      </tr>
+    </table>
+  </body>
+</html>
